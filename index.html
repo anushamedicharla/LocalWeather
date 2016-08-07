@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Local Weather</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="WeatherApp">
+  <div class="container" ng-controller="MainCtrl">
+    <div class=transBack>
+      <div id="weatherDiv">
+        <h1 class="text-center"> Local Weather : <span>{{city}}, {{state}}</span></h1>
+        <p>
+          <h1 class="text-center"><img src="{{icon_url}}"/>{{temp}} &#176{{temp_var1}}</h1>
+        </p>
+        <div id="butns">
+          <button class="btn bottom-buttons" id="tempButn" data-temp="{{temp_var1}}" ng-click="clickTempButton()">
+            <strong>&#176{{temp_var2}}</strong>
+          </button>
+          <p> <h3 class="text-center"> <em> It Feels Like: {{feelslike_var}} &#176{{temp_var1}}</em></h3></p>
+          <p> <h3 class="text-center"> <em> Looks like it's {{weatherforecast}}! </em></h3></p>
+          <p> <h3 class="text-center"> <em> The local date-time is {{local_time}} </em></h3></p>
+        </div>
+        <!--butns -->
+      </div>
+      <!-- weatherDiv -->
+    </div>
+    <!-- transBack -->
+  </div>
+  <!-- container -->
+</body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

@@ -1,22 +1,29 @@
-body{
-  background: no-repeat center center fixed; 
+body {
+  background: no-repeat center center fixed;
   background-size: cover;
-  font-weight: 400em;
+  font-weight: 400;
   font-family: cursive;
 }
 
-.transBack{
+.transBack {
   background-color: rgba(255, 255, 255, .05);
 }
-.bottom-buttons{
-  display:block;
-  margin:auto;
+
+.bottom-buttons {
+  display: block;
+  margin: auto;
   border-radius: 50px;
-  color:#fff;
+  color: #fff;
   background-color: rgba(0, 0, 0, .8);
 }
 
-.btn:focus,.btn:active {
-   outline: none !important;
-   color:#fff !important;
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  color: #fff !important;
+}
+
+#weatherLogo {
+  height:35px;
+  width:90px;
 }
